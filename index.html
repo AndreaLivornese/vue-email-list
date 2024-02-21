@@ -14,9 +14,13 @@
 
     <div id="app">
 
-        <ul>
+        <ul v-if="emails.length == 10">
             <li v-for="email in emails" >{{email}}</li>
         </ul>
+
+        <div v-else>
+            no ci sono almeno 10 email
+        </div>
 
     </div>
 
